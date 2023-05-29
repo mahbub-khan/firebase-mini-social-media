@@ -3,6 +3,7 @@ import { auth, db } from "../../config/firebase";
 import { useEffect, useState } from "react";
 import { Post } from "./post";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { Link } from "react-router-dom";
 
 export interface Post {
   //exporting it to include in post.tsx
@@ -36,8 +37,8 @@ export const Main = () => {
       {!user ? (
         <div className="nonLoggedHeader">
           <h2>
-            Please <a href="https://mini-social-media-project.web.app/login/">login</a> to Hit Likes!!! and Create your
-            own posts!!!
+            Please <Link to="/login">Login</Link> to Hit Likes!!! and Create
+            your own posts!!!
           </h2>
           {postsList?.map((singlePost) => (
             <Post post={singlePost} />
