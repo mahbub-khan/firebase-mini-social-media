@@ -37,7 +37,7 @@ export const Main = () => {
       {!user ? (
         <div className="nonLoggedHeader">
           <h2>
-            Please <Link to="/login">Login</Link> to Hit Likes!!! and Create
+            Please <Link to="/login">login</Link> to hit Likes!!! and Create
             your own posts!!!
           </h2>
           {postsList?.map((singlePost) => (
