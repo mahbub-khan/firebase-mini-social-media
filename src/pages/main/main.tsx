@@ -36,7 +36,7 @@ export const Main = () => {
       {!user ? (
         <div className="nonLoggedHeader">
           <h2>
-            Please <a href="/login">login</a> to Hit Likes!!! and Create your
+            Please <a href="https://mini-social-media-project.web.app/login/">login</a> to Hit Likes!!! and Create your
             own posts!!!
           </h2>
           {postsList?.map((singlePost) => (
